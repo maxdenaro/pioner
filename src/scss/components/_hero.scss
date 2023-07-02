@@ -1,0 +1,24 @@
+.hero {
+  &__top {
+    margin-bottom: var(--lg);
+  }
+
+  &__title {
+    grid-column: 6 span;
+    margin: 0;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 120%;
+    color: var(--dark);
+  }
+
+  &__descr {
+    grid-column: 4 span;
+    margin: 0;
+    padding-top: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--dark);
+  }
+}

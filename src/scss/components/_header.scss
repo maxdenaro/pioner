@@ -1,0 +1,63 @@
+/* stylelint-disable value-keyword-case */
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray);
+    padding: 35px 0;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 180px;
+  }
+
+  &__caption {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    color: var(--dark);
+  }
+
+  &__link {
+    border-bottom: 1px solid currentColor;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: right;
+    color: var(--accent);
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--accent);
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+  }
+}
