@@ -10,6 +10,15 @@
     font-size: 60px;
     line-height: 120%;
     color: var(--dark);
+
+    @include tablet {
+      font-size: 48px;
+    }
+
+    @include small-tablet {
+      grid-column: 4 span;
+      font-size: 40px;
+    }
   }
 
   &__descr {
@@ -20,5 +29,14 @@
     font-size: 16px;
     line-height: 120%;
     color: var(--dark);
+
+    @include tablet {
+      grid-column: 6 span;
+      padding-top: 16px;
+    }
+
+    @include small-tablet {
+      grid-column: 4 span;
+    }
   }
 }

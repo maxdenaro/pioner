@@ -1,5 +1,11 @@
 /* stylelint-disable value-keyword-case */
 .products {
+  &__list {
+    @include small-tablet {
+      row-gap: var(--gap);
+    }
+  }
+
   &__item {
     grid-column: 4 span;
   }
@@ -11,6 +17,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 32px 24px;
+  height: 100%;
   min-height: 435px;
   background: var(--light-gray);
 
@@ -19,6 +26,8 @@
   }
 
   &__title {
+    display: -webkit-box;
+    overflow: hidden;
     margin: 0;
     margin-top: auto;
     margin-bottom: 12px;
@@ -26,6 +35,12 @@
     font-size: 28px;
     line-height: 120%;
     color: var(--dark);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+
+    @include small-desktop {
+      font-size: 24px;
+    }
   }
 
   &__link {
@@ -48,5 +63,9 @@
       height: 11px;
       fill: currentColor;
     }
+  }
+
+  @include tablet {
+    min-height: 360px;
   }
 }

@@ -39,4 +39,8 @@
       }
     }
   }
+
+  @include tablet {
+    display: none;
+  }
 }
